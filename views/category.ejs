@@ -1,0 +1,55 @@
+<%- include('viewheader'); -%>
+<body>
+  <div class="layout-wrapper layout-content-navbar  ">
+    <div class="layout-container">
+      <%- include('container'); -%>
+      <div class="layout-page">
+          <%- include('profile'); -%>
+          <div class="content-wrapper">
+              <div class="container-xxl flex-grow-1 container-p-y">
+                  <h4 class="py-3 mb-4">
+                      <span class="text-muted fw-light">Dashboard /</span> Category
+                  </h4>
+                  <hr class="my-5">
+                  <div class="card">
+                      <div class="card-datatable text-nowrap">
+                          <table class="dt-fixedcolumns table table-bordered">
+                          <thead>
+                              <tr>
+                              <th>Name</th>
+                              <th>Position</th>
+                              <th>Email</th>
+                              <th>City</th>
+                              <th>Date</th>
+                              <th>Salary</th>
+                              <th>Age</th>
+                              <th>Experience</th>
+                              <th>Status</th>
+                              <th>Action</th>
+                              </tr>
+                          </thead>
+                          </table>
+                      </div>
+                  </div>
+            </div>
+            <%- include('footer'); -%>          
+            <div class="content-backdrop fade"></div>
+          </div>
+      </div>
+    </div>
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <div class="drag-target"></div>    
+  </div>
+  <script src="assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="assets/vendor/libs/popper/popper.js"></script>
+  <script src="assets/vendor/js/bootstrap.js"></script>
+  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="assets/vendor/libs/hammer/hammer.js"></script>
+  <script src="assets/vendor/libs/i18n/i18n.js"></script>
+  <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+  <script src="assets/vendor/js/menu.js"></script>
+  <script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/tables-datatables-extensions.js"></script> 
+</body>
+</html>
